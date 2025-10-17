@@ -10,7 +10,8 @@ public class HelloController {
 	@GetMapping("/hello")
 	@ResponseBody
 	public String hello() {
-		return "안녕하세요, 이것은 이용희 교수가 2025년 10월14일 스프링으로 만든 페이지 입니다";
+		return "안녕하세요, 이것은 이용희 교수가 2025년 10월14일 스프링으로 만든 페이지 입니다" +
+				"안녕하세요, 이것은 이용희 교수가 2025년 10월17일 스프링으로 만든 페이지 입니다";;
 	}
 	
 

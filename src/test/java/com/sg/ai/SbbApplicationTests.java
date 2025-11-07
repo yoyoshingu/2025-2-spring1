@@ -28,6 +28,7 @@ class SbbApplicationTests {
 		q2.setContent("스프링 기말 평가는 어떻게 하나요, 시험도 보나요");
 		q2.setCreateDate(LocalDateTime.now());
 		this.questionRepository.save(q2);
+		
 	}
 
 }

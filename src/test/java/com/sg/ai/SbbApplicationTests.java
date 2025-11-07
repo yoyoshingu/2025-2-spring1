@@ -24,8 +24,8 @@ class SbbApplicationTests {
 		this.questionRepository.save(q1);
 		
 		Question q2 = new Question();
-		q2.setSubject("기말시험 관련");
-		q2.setContent("스프링 기말 평가는 어떻게 하나요, 시험도 보나요");
+		q2.setSubject("오늘 날씨는 어떤가요");
+		q2.setContent("가을날씨처럼 화창해요");
 		q2.setCreateDate(LocalDateTime.now());
 		this.questionRepository.save(q2);
 		

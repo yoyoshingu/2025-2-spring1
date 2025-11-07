@@ -18,8 +18,8 @@ class SbbApplicationTests {
 	@Test
 	void testJpa() {
 		Question q1 = new Question();
-		q1.setSubject("sbb가 뭔가요?");
-		q1.setContent("sbb에 대해서 알고 싶습니다. 오늘은 11월4일입니다");
+		q1.setSubject("오늘이 며칠인가요?");
+		q1.setContent("오늘은 11월7일 목요일입니다");
 		q1.setCreateDate(LocalDateTime.now());
 		this.questionRepository.save(q1);
 		

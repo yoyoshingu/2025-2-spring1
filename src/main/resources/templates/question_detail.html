@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+<h2> 질문의 상세 페이지가 표시되는 곳</h2>
+<div> 제목, 내용을 표시함 </div>
+
+<h1 th:text="${question.subject}"></h1>
+<div th:text="${question.content}"></div>
+<div th:text="${question.createDate}"></div>
+<div th:text="${question.id}"></div>
+</body>
+</html>

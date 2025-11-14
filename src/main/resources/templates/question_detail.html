@@ -13,5 +13,17 @@
 <div th:text="${question.content}"></div>
 <div th:text="${question.createDate}"></div>
 <div th:text="${question.id}"></div>
+
+<!-- 
+	2025.11.14 
+	2-12 답변기능 만들기 지원
+ -->
+<form th:action="@{|/answer/create/${question.id}|}" method="post">
+	<textarea id="content" name="content" rows="15" ></textarea>
+	<input type="submit" value="답변등록">
+</form>
+
+
+
 </body>
 </html>

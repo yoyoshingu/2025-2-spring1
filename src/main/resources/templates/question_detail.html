@@ -1,6 +1,7 @@
 
 <html layout:decorate="~{layout}">
 <div layout:fragment="content" class="container my-3">
+	    <meta charset="utf-8">
 	
 	<h1 class="border-bottom py-2" th:text="${question.subject}"></h1>
 	
@@ -21,13 +22,13 @@
 	</div>
 	<!-- 
 		2025.11.14 
-		2-12 ´äº¯±â´É ¸¸µé±â Áö¿ø
+		2-12 ë‹µë³€ê¸°ëŠ¥ ë§Œë“¤ê¸° ì§€ì›
 	 -->
 	 
-    <!-- ´äº¯ÀÇ °¹¼ö Ç¥½Ã -->
+    <!-- ë‹µë³€ì˜ ê°¯ìˆ˜ í‘œì‹œ -->
     <h5 class="border-bottom my-3 py-2" 
-        th:text="|${#lists.size(question.answerList)}°³ÀÇ ´äº¯ÀÌ ÀÖ½À´Ï´Ù.|"></h5>
-    <!-- ´äº¯ ¹Ýº¹ ½ÃÀÛ -->
+        th:text="|${#lists.size(question.answerList)}ê°œì˜ ë‹µë³€ì´ ìžˆìŠµë‹ˆë‹¤.|"></h5>
+    <!-- ë‹µë³€ ë°˜ë³µ ì‹œìž‘ -->
     <div class="card my-3" th:each="answer : ${question.answerList}">
         <div class="card-body">
             <div class="card-text" style="white-space: pre-line;" th:text="${answer.content}"></div>
@@ -38,12 +39,12 @@
             </div>
         </div>
     </div>
-    <!-- ´äº¯ ¹Ýº¹ ³¡  -->
+    <!-- ë‹µë³€ ë°˜ë³µ ë  -->
 	 
 	 
 	<form th:action="@{|/answer/create/${question.id}|}" method="post" class="my-3">
 		<textarea id="content" name="content" rows="15" class="form-control"></textarea>
-		<input type="submit" value="´äº¯µî·Ï" class="btn btn-primary my-2">
+		<input type="submit" value="ë‹µë³€ë“±ë¡" class="btn btn-primary my-2">
 	</form>
 
 </div>

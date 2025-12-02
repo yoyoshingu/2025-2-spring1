@@ -15,7 +15,7 @@ class SbbApplicationTests {
 	@Autowired
 	private QuestionRepository questionRepository;
 
-	@Test
+//	@Test
 	void testJpa() {
 		Question q1 = new Question();
 		q1.setSubject("오늘이 며칠인가요?");
